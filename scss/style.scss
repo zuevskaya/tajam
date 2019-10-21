@@ -25,7 +25,7 @@ h4, h5 {
     text-align: center;
     letter-spacing: 0.9px;
     margin-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .container {
@@ -77,10 +77,10 @@ header {
         background-color: #655c80;
     }
 
-
  //Вариант 2 бургера
     .menu {
         text-align: right;
+        margin-top: 10px;
         &.show-menu {
             .menu__links {
                 display: block;
@@ -117,7 +117,7 @@ header {
         span {
             display: block;
             position: absolute;
-            height: 9px;
+            height: 5px;
             width: 100%;
             background: #fff;
             border-radius: 9px;
@@ -137,8 +137,7 @@ header {
                 top: 26px;
             }
         }
-    }  
-    
+    }     
     
     .menu__links-item {
         display: inline-block;
@@ -148,13 +147,10 @@ header {
             }  
         font-family: "Roboto-Black";
         font-size: 13px;
-        margin-left: 26px;
+        margin-left: 22px;
         text-transform: uppercase;
         text-decoration: none;
         cursor: pointer;
-        &:hover {
-            //text-decoration: underline;
-        }
     }
     
     @media screen and (max-width: 999px) {
@@ -168,8 +164,9 @@ header {
         top: 0;
         right: 0;
         left: 0;
-        margin-top: 52px;
-        background-color: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        padding-top: 15px;
+        background-color: rgba(0, 0, 0, 0.6);
         z-index: 1000;
         overflow: auto;
       }
@@ -182,8 +179,6 @@ header {
       }
     }
     //Конец бургер меню
-
-
 
     ul {
         display: flex;
@@ -221,6 +216,7 @@ h1 {
     font-family: "PlayfairDisplay-Black";
     font-size: 32px;
     letter-spacing: 0.2px;
+    margin-top: 29px;
     margin-bottom: 24px;
 }
 
@@ -294,7 +290,7 @@ h1 {
 /*Section2-our-story*/
 .our-story {
     background-color: #fff;
-    padding: 47px 0 69px;
+    padding: 47px 0 70px;
     .container {
         display: flex;
         align-items: center;
@@ -337,9 +333,9 @@ h1 {
 
 /*Section3-watch-video*/
 .watch-video {
-    // background: url("../img/overlay-video2.png"), url("../img/background3-video-here2.png");
-    // background-position: center;
-    // background-size: cover;
+    background: url(/img/background3-video-here2.png);
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 550px;
     
@@ -357,7 +353,11 @@ h1 {
         }
     }
 
-    video {
+    .video-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         width: 100%;
         height: 100%;
     }
@@ -374,6 +374,7 @@ h1 {
         border: none;
         background: transparent;
         cursor: pointer;
+        margin-top: 10px;
         padding: 0;
         img {
             display: flex;
@@ -385,11 +386,10 @@ h1 {
     }
 }
 
-
 /*Section4-expertise*/
 .expertise {
-    padding-top: 70px;
-    padding-bottom: 100px;
+    padding-top: 66px;
+    padding-bottom: 49px;
     p{
         font-family: "PlayfairDisplay-Regular";
         font-size: 14px;
@@ -401,17 +401,17 @@ h1 {
     }
     .awesome-decor {
         background: #413d4b;
-        margin: 20px auto 24px;
+        margin: 18px auto 24px;
     }
     
     .top-block{
         display: flex;
         align-items: center;
         text-align: center;
-        margin-top: 80px auto;
-        margin-bottom: 30px;
+        margin: 81px 0 30px;
         img {
             margin-bottom: 31px;
+            height: 50px;
         }
         p{
             font-family: "Roboto-Light";
@@ -431,7 +431,6 @@ h1 {
         align-items: center;
         text-align: center;
         margin: 40px auto;
-        
         img {
             margin-bottom: 31px;
         }
@@ -447,6 +446,7 @@ h1 {
     }
     p.big {
         font-family: "Roboto-Black";
+        margin-top: -6px;
     } 
 }
 
@@ -456,8 +456,7 @@ h1 {
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding: 70px 0px;
-   
+    padding: 66px 0 70px;
 }
 .team {
     h5 {
@@ -466,6 +465,7 @@ h1 {
     .big {
         font-family: "Roboto-Black";
         font-size: 14px;
+        margin-bottom: 0px;
     }
     p{
         font-family: "PlayfairDisplay-Regular";
@@ -474,12 +474,13 @@ h1 {
         text-align: center;
         letter-spacing: 0.5px;
         margin: 0;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
 
     p.last {
         font-family: "Roboto-Light";
-        margin-bottom: 26px;
+        padding-top: 3px;
+        margin-bottom: 18px;
     }
 
     .awesome-decor {
@@ -501,7 +502,7 @@ h1 {
         .personal {
             box-sizing: border-box;
             margin: 0 10px;
-            .asd {
+            .people-pers {
                 overflow: hidden;
                 margin-bottom: 20px;
                 display: flex;
@@ -540,7 +541,7 @@ h1 {
 
 /*Section6-works*/
 .works {
-    padding: 70px 0px;
+    padding: 51px 0 209px;
     .picture-works1 {
         display: flex;
         box-sizing: border-box;
@@ -568,7 +569,7 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 70px;
+        margin-bottom: 55px;
         h6 {
             font-family: "PlayfairDisplay-Bold";
             font-size: 22px;
@@ -580,24 +581,19 @@ h1 {
             font-family: "Roboto-Light";
             font-size: 14px;
             color: #413d4b;
+            padding-right: 5px;
+            &::after {
+                content: ' >';
+                font-size: 22px;
+                } 
         }
 
         .see {
             display: flex;
             text-align: center;
             justify-content: center;
+            
         }
-
-    
-        //p::after {
-            //content: ' >';
-            //opacity: 1;
-           // width: 13px;
-           // height: 22px;
-          //  background-position: center;
-          //  background-repeat: no-repeat;
-          //  background-size: cover;
-        //} 
         
         .smolbtn {
             &:hover {
@@ -620,13 +616,8 @@ h1 {
     .btn-learn {
         width: 140px;
         margin-top: 70px;
-    }
-    
-    
+    }    
 }
-    
-
-
 
 /*Section7-people*/
 .section-background-people {
@@ -651,7 +642,7 @@ h1 {
         font-size: 16px;
         color: #fff;
         line-height: 26px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     p.jane {
         font-family: "Roboto-Black";
@@ -663,7 +654,7 @@ h1 {
         font-family: "Roboto-Light";
         font-size: 13px;
         text-transform: uppercase;
-        margin-bottom: 43px;
+        margin-bottom: 28px;
         margin-top: 0px;
     }
 }
@@ -708,7 +699,7 @@ h1 {
 
 /*Section8-client*/
 .client {
-    padding: 70px 0px;
+    padding: 65px 0px;
     display: flex;
     .all {
         display: flex;
@@ -721,32 +712,30 @@ h1 {
             margin-bottom: 35px;
             margin-top: 0px;
         }
-
         img {
             margin-bottom: 45px;
             margin-top: 0px;
         }
-        
         .formnews {
             display: flex;
             font-family: "Roboto-Light";
             font-size: 14px;
             color: #413d4b;
-            max-width: 460px;
+            max-width: 455px;
             margin: 0 auto;
             padding: 0px 0;
             input {
-                width: 445px;
-                height: 45px;
+                width: 440px;
+                height: 40px;
                 margin-bottom: 21px;
                 padding-left: 15px;
             }
             textarea {
-                height: 200px;
-                width: 445px;
+                height: 177px;
+                width: 440px;
                 padding-top: 20px;
                 padding-left: 15px;
-                margin-bottom: 21px;
+                margin-bottom: 17px;
                 counter-reset: none;
             }
             button {
@@ -789,8 +778,6 @@ h1 {
     }
 }
 
-
-
 /*Section9-footer*/
 footer {
     background: url("../img/overlay-footer.png"), url("../img/background9-footer.png");
@@ -799,7 +786,6 @@ footer {
     width: 100%;
     padding-top: 70px;
     padding-bottom: 70px;
-    
 }
 a {
     color: #fff;            
@@ -817,10 +803,6 @@ a {
     }
     .studio {
         max-width: 300px;
-        p {
-            //padding-left: 15px;
-        }
-
         .our1 {
             position: relative;
             padding-left: 20px;    padding-left: 20px;
@@ -830,12 +812,6 @@ a {
             position: absolute;
             display: block;
             left: -3px;
-            //opacity: 1;
-            // width: 13px;
-            // height: 22px;
-            //  background-position: center;
-            //  background-repeat: no-repeat;
-            //  background-size: cover;
             }
         
         .our2 {
@@ -847,12 +823,6 @@ a {
             position: absolute;
             display: inline-block;
             left: -3px;
-            //opacity: 1;
-            // width: 13px;
-            // height: 22px;
-            //  background-position: center;
-            //  background-repeat: no-repeat;
-            //  background-size: cover;
             }  
     }
     .touch {
@@ -865,7 +835,7 @@ a {
             width: 290px;
             margin: 0 auto;
             padding: 0;
-            margin-bottom: 21px;
+            margin-bottom: 28px;
             ::-webkit-input-placeholder {color:#fff; opacity: 0.5;}
             ::-moz-placeholder          {color:#fff; opacity: 0.5;}/* Firefox 19+ */
             :-moz-placeholder           {color:#fff; opacity: 0.5;}/* Firefox 18- */
@@ -907,11 +877,13 @@ a {
     p.big {
         font-size: 15px;
         font-family: "Roboto-Black";
+        margin-bottom: 27px;
     }
     p {
         font-family: "Roboto-Light";
         font-size: 14px;
         color: #fff;
+        letter-spacing: 0.35px;
         line-height: 26px;
     }
     .main-social {
@@ -937,6 +909,9 @@ a {
     letter-spacing: 0.5px;
     line-height: 26px;
     color: #fff;
+    p {
+        margin: 2px 0px;
+    }
     ul {
         display: flex;
         align-items: center;
@@ -949,3 +924,223 @@ a {
     
 }
 
+@media all and (max-width: 970px) {
+    .our-story img {
+        margin-left: 35px;
+        width: 25%;
+    }
+    .expertise {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        .top-block p, .bottom-block p {
+            padding: 0 30px;
+        }
+    }
+    .manager-block {
+        flex-wrap: wrap;
+        margin: 0px 21px;
+        .personal {
+            padding: 0 30px;
+        }
+    }
+
+    .slider-reviews p {
+        padding: 0 26px;
+        margin-bottom: 10px;
+    }
+
+    .client .all {
+        margin-right: 20px;
+        .rightform {
+            margin-top: 0px;
+            padding-left: 10px;
+        }
+        .client-mark .left-client, .right-client {
+            margin-right: 15px;
+        }
+        
+        img {
+            margin-bottom: 30px;
+        }
+            
+    }
+
+    .footer-column {
+        margin-bottom: 40px;
+        .firm p {
+            padding-right: 25px;
+        }
+        .studio p {
+            padding-right: 25px;
+        }
+        .logo img {
+            max-height: 40px;
+        }
+    }
+
+}
+
+@media all and (max-width: 870px) {
+    .our-story img {
+        margin-left: 25px;
+        width: 20%;
+    }
+    .client .all {
+        margin-right: 20px;
+        display: grid;
+        .rightform {
+            margin-top: 40px;
+            .client-mark .left-client {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .awesome {
+        padding: 100px 0 100px;
+    }
+    .our-story img {
+        margin-left: 20px;
+        width: 15%;
+    }
+    .team .container .awesome-decor {
+        width: 160px;
+        margin: 10px auto;
+    }
+    .section-background-team {
+        padding: 25px 0px;
+        .personal .people-pers {
+            max-height: 150px;
+            max-width: 160px;
+        }
+    }
+    .team .container .manager-block {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .client {
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+}
+
+@media all and (max-width: 670px) {
+    .our-story img {
+        display: none;
+    }
+    .slider-reviews .quotes {
+        padding: 20px 0;
+    }
+    .manager-block .personal {
+        padding: 0;  
+    }
+
+    .footer-column { 
+        flex-wrap: wrap;
+        .firm, .studio {
+            max-width: 240px;
+        }
+        .touch {
+            max-width: 250px;
+        }
+        .main-social {
+            flex-wrap: wrap;
+            li {
+                margin-right: 31px;
+            }
+        }
+    }
+    .touch form {
+        max-width: 250px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .team .container .awesome-decor {
+        display: none;
+    }
+    .section-background-team {
+        padding: 15px 0px;
+        .personal .people-pers {
+            max-height: 85px;
+            max-width: 95px;
+            padding: 0 20px;
+        }
+    }
+    .manager-block .personal {
+        padding: 0;  
+    }
+
+    .expertise .top-block {
+        display: inline-block;
+        margin-bottom: 0px;
+        img {
+            display: none;
+        }
+    }
+    .expertise .bottom-block {
+        display: inline-block;
+        margin: 0;
+        img {
+            display: none;
+        }
+    }
+    .client .all {
+        .rightform {
+            margin-top: 10px;
+            img {
+                margin-bottom: 15px;
+            }
+            .client-mark .left-client {
+                margin-right: 10px;
+            }
+            .client-mark .right-client {
+                margin-left: 10px;
+            }
+        }
+    }
+    .client .all .formnews input {
+        width: 70%;
+    }
+    .client .all .formnews textarea {
+        width: 70%;
+    }
+    .slider-reviews {
+        p {
+            font-size: 12px;
+        }
+        p.profession {
+            margin-bottom: 20px;
+        }
+    }
+    .slider-people {
+        max-width: 235px;
+    }
+    .endfooter ul {
+        display: block;
+    }
+}
+@media all and (max-width: 400px) {
+    .rightform {
+        display: none;
+    }
+    .leftform {
+        margin-bottom: 15px;
+    }
+    .container .manager-block  {
+        display: none;
+    }
+    .works {
+        padding: 20px 0px;
+        .working {
+            display: block;
+            margin-bottom: 50px;
+        }
+    }
+    .firm p {
+        display: none;
+    }
+}
