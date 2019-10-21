@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Проектный макет Иванова Анастасия</title>
-    <meta name="description" content="Макет сайта креативного агенства" />
-
+    <meta name="description" content="Макет сайта креативного агенства"/>
 
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/slick.css">
@@ -33,17 +33,17 @@
                     <div class="menu__links">
                         <a class="menu__links-item" href="#home">Home</a>
                         <a class="menu__links-item" href="#about">About</a>
-                        <a class="menu__links-item" href="#our-story">Expertise</a>
+                        <a class="menu__links-item" href="#expertise">Expertise</a>
                         <a class="menu__links-item" href="#team">Teams</a>
-                        <a class="menu__links-item" href="Works.html">Works</a>
-                        <a class="menu__links-item" href="People Say.html">People Say</a>
-                        <a class="menu__links-item" href="Contact.html">Contact</a>
+                        <a class="menu__links-item" href="#works">Works</a>
+                        <a class="menu__links-item" href="#people">People Say</a>
+                        <a class="menu__links-item" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
         </header>
 
-        <section id="about" class="awesome">
+        <section class="awesome">
             <div class="container">
                 <div class="creativ-agency">
                     <div class="slide">
@@ -104,7 +104,7 @@
     </div>
 
     <!--Section2-our-story-->
-    <section id="our-story" class="our-story">
+    <section id="about" class="our-story">
         <div class="container">
             <img src="./img/Replace-with-your-logo.png">
             <div class="story-right">
@@ -127,23 +127,25 @@
     <!--Section3-watch-video-->
     <section class="watch-video">
         <div class="watch-video-title">
-            <h3>Watch our story</h3>
             <button class="video-button"><img src="./img/playbtn.png" /></button>
+            <h3>Watch our story</h3>
         </div>
-        <video id="video" muted poster="./img/background1-header-here1.png"
+        <div class="video-block">
+        <video id="video" muted poster="./img/background3-video-here2.png"
             src="./video/LQ-final.mp4"></video>
+        </div>    
     </section>
 
 
     <!--Section4-expertise-->
-    <section class="expertise">
+    <section id="expertise" class="expertise">
         <div class="container">
             <h4>Expertise</h4>
             <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
             <div class="awesome-decor"></div>
             <div class="top-block">
                 <div>
-                    <img src="../Maket-ivanova/img/icon-top-left.png">
+                    <img src="./img/icon-top-left.png">
                     <p class="big"> web design & development</p>
                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
                         Aenean.
@@ -157,7 +159,7 @@
                     </p>
                 </div>
                 <div>
-                    <img src="../Maket-ivanova/img/icon-top-right.png">
+                    <img src="./img/icon-top-right.png">
                     <p class="big">Mobille app</p>
                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
                         Aenean.
@@ -197,7 +199,7 @@
                 <div class="awesome-decor"></div>
                 <ul class="manager-block">
                     <li class="personal">
-                        <div>
+                        <div class="people-pers">
                             <img src="./img/manager1.png">
                         </div>
                         <p class="big">Semf ucuk</p>
@@ -205,7 +207,7 @@
                         <div class="awesome-decor"></div>
                     </li>
                     <li class="personal">
-                        <div>
+                        <div class="people-pers">
                             <img src="./img/manager2.png">
                         </div>
                         <p class="big">Dik adalin</p>
@@ -213,7 +215,7 @@
                         <div class="awesome-decor"></div>
                     </li>
                     <li class="personal">
-                        <div class="asd">
+                        <div class="people-pers">
                             <img src="./img/manager3.png">
                         </div>
                         <p class="big">Jeng kol</p>
@@ -221,7 +223,7 @@
                         <div class="awesome-decor"></div>
                     </li>
                     <li class="personal">
-                        <div>
+                        <div class="people-pers">
                             <img src="./img/manager4.png">
                         </div>
                         <p class="big">Pet romak</p>
@@ -237,14 +239,11 @@
     </section>
 
     <!--Section6-works-->
-    <section class="works">
+    <section id="works" class="works">
         <div class="container">
             <div class="working">
-                <h6>Our Works</h6>
-                <div class="see">
-                    <p>See All Project in dribbble</p>
-                    <button class="smolbtn"><a href="#">></a></button>
-                </div>
+                <h6>Our Works</h6>  
+                    <a href="#"><p>See All Project in dribbble</p></a>   
             </div>
         </div>
         <div class="picture-works1">
@@ -271,7 +270,7 @@
     </section>
 
     <!--Section7-people-->
-    <section class="people">
+    <section id="people"class="people">
         <div class="section-background-people">
             <div class="container">
                 <div class="slider-reviews">
@@ -425,11 +424,9 @@
         </div>
     </section>
 
-
     <!--Section9-footer-->
     <footer>
-
-        <div class="container">
+        <div id="contact" class="container">
             <div class="footer-column">
                 <div class="firm">
                     <a href="#" class="logo">
