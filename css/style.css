@@ -408,7 +408,7 @@ h4, h5 {
   text-align: center;
   letter-spacing: 0.9px;
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .container {
@@ -460,6 +460,7 @@ header.fixed-menu {
 }
 header .menu {
   text-align: right;
+  margin-top: 10px;
 }
 header .menu.show-menu .menu__links {
   display: block;
@@ -490,7 +491,7 @@ header .menu__icon {
 header .menu__icon span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 5px;
   width: 100%;
   background: #fff;
   border-radius: 9px;
@@ -513,7 +514,7 @@ header .menu__links-item {
   color: #fff;
   font-family: "Roboto-Black";
   font-size: 13px;
-  margin-left: 26px;
+  margin-left: 22px;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -531,8 +532,9 @@ header .menu__links-item:hover {
     top: 0;
     right: 0;
     left: 0;
-    margin-top: 52px;
-    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1000;
     overflow: auto;
   }
@@ -577,6 +579,7 @@ h1 {
   font-family: "PlayfairDisplay-Black";
   font-size: 32px;
   letter-spacing: 0.2px;
+  margin-top: 29px;
   margin-bottom: 24px;
 }
 
@@ -649,7 +652,7 @@ h1 {
 /*Section2-our-story*/
 .our-story {
   background-color: #fff;
-  padding: 47px 0 69px;
+  padding: 47px 0 70px;
 }
 .our-story .container {
   display: flex;
@@ -692,6 +695,9 @@ h1 {
 
 /*Section3-watch-video*/
 .watch-video {
+  background: url(/img/background3-video-here2.png);
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 550px;
   overflow: hidden;
@@ -708,7 +714,11 @@ h1 {
 .watch-video .watch-video-title.hide-title {
   display: none;
 }
-.watch-video video {
+.watch-video .video-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 100%;
   height: 100%;
 }
@@ -725,6 +735,7 @@ h1 {
   border: none;
   background: transparent;
   cursor: pointer;
+  margin-top: 10px;
   padding: 0;
 }
 .watch-video .video-button img {
@@ -737,8 +748,8 @@ h1 {
 
 /*Section4-expertise*/
 .expertise {
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding-top: 66px;
+  padding-bottom: 49px;
 }
 .expertise p {
   font-family: "PlayfairDisplay-Regular";
@@ -751,17 +762,17 @@ h1 {
 }
 .expertise .awesome-decor {
   background: #413d4b;
-  margin: 20px auto 24px;
+  margin: 18px auto 24px;
 }
 .expertise .top-block {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-top: 80px auto;
-  margin-bottom: 30px;
+  margin: 81px 0 30px;
 }
 .expertise .top-block img {
   margin-bottom: 31px;
+  height: 50px;
 }
 .expertise .top-block p {
   font-family: "Roboto-Light";
@@ -792,6 +803,7 @@ h1 {
 }
 .expertise p.big {
   font-family: "Roboto-Black";
+  margin-top: -6px;
 }
 
 /*Section5-team*/
@@ -800,7 +812,7 @@ h1 {
   background-position: center;
   background-size: cover;
   width: 100%;
-  padding: 70px 0px;
+  padding: 66px 0 70px;
 }
 
 .team h5 {
@@ -809,6 +821,7 @@ h1 {
 .team .big {
   font-family: "Roboto-Black";
   font-size: 14px;
+  margin-bottom: 0px;
 }
 .team p {
   font-family: "PlayfairDisplay-Regular";
@@ -817,11 +830,12 @@ h1 {
   text-align: center;
   letter-spacing: 0.5px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .team p.last {
   font-family: "Roboto-Light";
-  margin-bottom: 26px;
+  padding-top: 3px;
+  margin-bottom: 18px;
 }
 .team .awesome-decor {
   background: #655c80;
@@ -843,7 +857,7 @@ h1 {
   box-sizing: border-box;
   margin: 0 10px;
 }
-.team .manager-block .personal .asd {
+.team .manager-block .personal .people-pers {
   overflow: hidden;
   margin-bottom: 20px;
   display: flex;
@@ -874,7 +888,7 @@ h1 {
 
 /*Section6-works*/
 .works {
-  padding: 70px 0px;
+  padding: 51px 0 209px;
 }
 .works .picture-works1 {
   display: flex;
@@ -903,7 +917,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 55px;
 }
 .works .working h6 {
   font-family: "PlayfairDisplay-Bold";
@@ -916,6 +930,11 @@ h1 {
   font-family: "Roboto-Light";
   font-size: 14px;
   color: #413d4b;
+  padding-right: 5px;
+}
+.works .working p::after {
+  content: " >";
+  font-size: 22px;
 }
 .works .working .see {
   display: flex;
@@ -967,7 +986,7 @@ h1 {
   font-size: 16px;
   color: #fff;
   line-height: 26px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .slider-reviews p.jane {
   font-family: "Roboto-Black";
@@ -979,7 +998,7 @@ h1 {
   font-family: "Roboto-Light";
   font-size: 13px;
   text-transform: uppercase;
-  margin-bottom: 43px;
+  margin-bottom: 28px;
   margin-top: 0px;
 }
 
@@ -1021,7 +1040,7 @@ h1 {
 
 /*Section8-client*/
 .client {
-  padding: 70px 0px;
+  padding: 65px 0px;
   display: flex;
 }
 .client .all {
@@ -1045,22 +1064,22 @@ h1 {
   font-family: "Roboto-Light";
   font-size: 14px;
   color: #413d4b;
-  max-width: 460px;
+  max-width: 455px;
   margin: 0 auto;
   padding: 0px 0;
 }
 .client .all .formnews input {
-  width: 445px;
-  height: 45px;
+  width: 440px;
+  height: 40px;
   margin-bottom: 21px;
   padding-left: 15px;
 }
 .client .all .formnews textarea {
-  height: 200px;
-  width: 445px;
+  height: 177px;
+  width: 440px;
   padding-top: 20px;
   padding-left: 15px;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   counter-reset: none;
 }
 .client .all .formnews button {
@@ -1157,7 +1176,7 @@ a:hover {
   width: 290px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 21px;
+  margin-bottom: 28px;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
@@ -1219,11 +1238,13 @@ a:hover {
 .footer-column p.big {
   font-size: 15px;
   font-family: "Roboto-Black";
+  margin-bottom: 27px;
 }
 .footer-column p {
   font-family: "Roboto-Light";
   font-size: 14px;
   color: #fff;
+  letter-spacing: 0.35px;
   line-height: 26px;
 }
 .footer-column .main-social {
@@ -1246,6 +1267,9 @@ a:hover {
   line-height: 26px;
   color: #fff;
 }
+.endfooter p {
+  margin: 2px 0px;
+}
 .endfooter ul {
   display: flex;
   align-items: center;
@@ -1254,6 +1278,239 @@ a:hover {
 }
 .endfooter li {
   margin-right: 32px;
+}
+
+@media all and (max-width: 970px) {
+  .our-story img {
+    margin-left: 35px;
+    width: 25%;
+  }
+
+  .expertise {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .expertise .top-block p, .expertise .bottom-block p {
+    padding: 0 30px;
+  }
+
+  .manager-block {
+    flex-wrap: wrap;
+    margin: 0px 21px;
+  }
+  .manager-block .personal {
+    padding: 0 30px;
+  }
+
+  .slider-reviews p {
+    padding: 0 26px;
+    margin-bottom: 10px;
+  }
+
+  .client .all {
+    margin-right: 20px;
+  }
+  .client .all .rightform {
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  .client .all .client-mark .left-client, .client .all .right-client {
+    margin-right: 15px;
+  }
+  .client .all img {
+    margin-bottom: 30px;
+  }
+
+  .footer-column {
+    margin-bottom: 40px;
+  }
+  .footer-column .firm p {
+    padding-right: 25px;
+  }
+  .footer-column .studio p {
+    padding-right: 25px;
+  }
+  .footer-column .logo img {
+    max-height: 40px;
+  }
+}
+@media all and (max-width: 870px) {
+  .our-story img {
+    margin-left: 25px;
+    width: 20%;
+  }
+
+  .client .all {
+    margin-right: 20px;
+    display: grid;
+  }
+  .client .all .rightform {
+    margin-top: 40px;
+  }
+  .client .all .rightform .client-mark .left-client {
+    margin-right: 50px;
+  }
+}
+@media all and (max-width: 768px) {
+  .awesome {
+    padding: 100px 0 100px;
+  }
+
+  .our-story img {
+    margin-left: 20px;
+    width: 15%;
+  }
+
+  .team .container .awesome-decor {
+    width: 160px;
+    margin: 10px auto;
+  }
+
+  .section-background-team {
+    padding: 25px 0px;
+  }
+  .section-background-team .personal .people-pers {
+    max-height: 150px;
+    max-width: 160px;
+  }
+
+  .team .container .manager-block {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .client {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+}
+@media all and (max-width: 670px) {
+  .our-story img {
+    display: none;
+  }
+
+  .slider-reviews .quotes {
+    padding: 20px 0;
+  }
+
+  .manager-block .personal {
+    padding: 0;
+  }
+
+  .footer-column {
+    flex-wrap: wrap;
+  }
+  .footer-column .firm, .footer-column .studio {
+    max-width: 240px;
+  }
+  .footer-column .touch {
+    max-width: 250px;
+  }
+  .footer-column .main-social {
+    flex-wrap: wrap;
+  }
+  .footer-column .main-social li {
+    margin-right: 31px;
+  }
+
+  .touch form {
+    max-width: 250px;
+  }
+}
+@media all and (max-width: 550px) {
+  .team .container .awesome-decor {
+    display: none;
+  }
+
+  .section-background-team {
+    padding: 15px 0px;
+  }
+  .section-background-team .personal .people-pers {
+    max-height: 85px;
+    max-width: 95px;
+    padding: 0 20px;
+  }
+
+  .manager-block .personal {
+    padding: 0;
+  }
+
+  .expertise .top-block {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  .expertise .top-block img {
+    display: none;
+  }
+
+  .expertise .bottom-block {
+    display: inline-block;
+    margin: 0;
+  }
+  .expertise .bottom-block img {
+    display: none;
+  }
+
+  .client .all .rightform {
+    margin-top: 10px;
+  }
+  .client .all .rightform img {
+    margin-bottom: 15px;
+  }
+  .client .all .rightform .client-mark .left-client {
+    margin-right: 10px;
+  }
+  .client .all .rightform .client-mark .right-client {
+    margin-left: 10px;
+  }
+
+  .client .all .formnews input {
+    width: 70%;
+  }
+
+  .client .all .formnews textarea {
+    width: 70%;
+  }
+
+  .slider-reviews p {
+    font-size: 12px;
+  }
+  .slider-reviews p.profession {
+    margin-bottom: 20px;
+  }
+
+  .slider-people {
+    max-width: 235px;
+  }
+
+  .endfooter ul {
+    display: block;
+  }
+}
+@media all and (max-width: 400px) {
+  .rightform {
+    display: none;
+  }
+
+  .leftform {
+    margin-bottom: 15px;
+  }
+
+  .container .manager-block {
+    display: none;
+  }
+
+  .works {
+    padding: 20px 0px;
+  }
+  .works .working {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .firm p {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
